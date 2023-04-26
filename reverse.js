@@ -1,8 +1,16 @@
-let str="abacd";
-
-for (let i=str.length-1; i>=0; i--){
-
-bag+=str[i];
-
+let obj={
+  arr:["hii","bye","shy","kay"],
+  reverse:function(){
+    let ouput=[]
+    for(let i=0;i<this.arr.length;i++){
+      let reverse=""
+      for(let j=this.arr[i]-1;j>=0;j--){
+        reverse+=this.arr[i][j]
+        output.push(reverse)
+      }
+    }
+  }
+  console.log(output)
 }
-console.log (bag);
+
+obj.reverse()
